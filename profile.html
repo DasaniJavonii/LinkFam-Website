@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Tap In</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="scripts.js"></script>
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html" class="active">Profile</a></li>
+    <li><button id="logoutBtn">Logout</button></li>
+  </ul>
+</nav>
+
+<header class="welcome-header">
+  <h1>Tap In - Profile</h1>
+</header>
+
+<main class="profile-container">
+  <section class="profile-header">
+    <img id="profilePicPreview" src="default-profile.png" alt="Profile Picture">
+    <input type="file" id="profilePic" accept="image/*">
+    <h2><input type="text" id="profileName" placeholder="Enter your name"></h2>
+  </section>
+
+  <section class="details">
+    <h3>Profile Details</h3>
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+    <label>Account Type:</label>
+    <span id="accountType">[Customer or Business]</span>
+    <label>Business Type:</label>
+    <input type="text" id="businessType" placeholder="Enter business type (if applicable)">
+  </section>
+
+  <button id="updateProfileBtn">Update Profile</button>
+</main>
+
+<footer>
+  <p>© 2024 Tap In. All rights reserved.</p>
+</footer>
+</body>
+</html>

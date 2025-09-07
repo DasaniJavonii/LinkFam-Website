@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap In - Customer Signup</title>
+  <link rel="stylesheet" href="styles.css">
+<script type="module" src="scripts.js"></script>
+ <script type="module" src="firebase-config.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><button id="logoutBtn">Logout</button></li>
+
+  </ul>
+</nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Create Your Customer Account</h1>
+    <p>Join the Tap In community and start connecting today.</p>
+  </header>
+
+  <!-- Signup Form -->
+  <main class="signup-form">
+    <form id="customerSignup">
+	<label for="username">Username:</label>
+<input type="text" id="username" name="username" required placeholder="Choose a username">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" required>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+
+    <!-- Social Login Options -->
+    <p>Or sign up using:</p>
+    <div class="social-login">
+      <button class="google-btn">Google</button>
+      <button class="facebook-btn">Facebook</button>
+      <button class="instagram-btn">Instagram</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Tap In. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

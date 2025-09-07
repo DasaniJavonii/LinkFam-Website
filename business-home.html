@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Home - Tap In</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="scripts.js"></script>
+</head>
+<body>
+  <!-- Navigation: Responsive Navbar -->
+  <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+      ☰
+    </div>
+    <ul class="nav-links">
+      <li><a href="business-home.html" class="active">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><button id="logoutBtn">Logout</button></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="welcome">
+      <h2>Welcome, [Business Name]!</h2>
+      <p>Manage your business and view customer feedback and analytics.</p>
+    </section>
+
+    <section class="business-tools">
+      <h3>Business Dashboard</h3>
+      <div class="analytics">
+        <p>Visits: 500 this week</p>
+      </div>
+      <div class="customer-feedback">
+        <h4>Customer Reviews</h4>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Tap In. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("mobile-menu").addEventListener("click", function() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

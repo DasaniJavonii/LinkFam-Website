@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Home - Tap In</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="firebase-config.js"></script>
+<script type="module" src="scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <!-- Navigation: Use a common navbar (if desired) -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="customer-home.html" class="active">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><button id="logoutBtn">Logout</button></li>
+    </ul>
+  </nav>
+
+
+  <!-- Main Content for Customers -->
+  <main>
+    <section class="welcome">
+     <h1>Welcome, <span id="displayUsername"></span>!</h1>
+      <p>Discover great local businesses and leave reviews for the ones you visit.</p>
+    </section>
+
+    <!-- Business Search & Recommendations -->
+    <section class="search-bar">
+      <!-- Your search bar code here -->
+    </section>
+
+    <section class="recommendations">
+      <!-- List businesses here -->
+    </section>
+
+    <!-- Comments Section (for logged-in customers only) -->
+    <section class="comments">
+      <h3>Your Reviews</h3>
+      <form id="commentForm">
+        <textarea id="commentText" placeholder="Write your review here..."></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <div id="commentsList">
+        <!-- Dynamically load customer reviews here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Tap In. All rights reserved.</p>
+  </footer>
+</body>
+</html>
